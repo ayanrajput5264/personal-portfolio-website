@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #020617, #111827);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+
+<body class="text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-black/30 backdrop-blur-lg">
+    <img src="./img/my photo.jfif" class="w-10 h-10 rounded-full border-2 border-blue-500">
+    <ul class="flex gap-6">
+      <li><a href="#" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20">
+    <img src="./img/my photo.jfif" class="w-32 h-32 mx-auto rounded-full border-4 border-blue-500">
+    <h1 class="text-4xl font-bold mt-4">Rao Ayan Rajput</h1>
+    <p class="text-gray-400 mt-2">Web Developer | Blockchain | Crypto</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="px-8 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Project Title</h3>
+        <p class="text-gray-400 mt-2">Project description here...</p>
+      </div>
+
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Project Title</h3>
+        <p class="text-gray-400 mt-2">Project description here...</p>
+      </div>
+
+      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
+        <h3 class="text-xl font-semibold">Project Title</h3>
+        <p class="text-gray-400 mt-2">Project description here...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-8 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+
+    <p>
+      Email: ayanait87@email.com
+
+    </p>
+
+    <p>
+      GitHub: ayanrajput5264
+
+    </p>
+
+    <p>
+      LinkedIn: rao-ayan-rajput
+
+    </p>
+    <button class="mt-6 px-6 py-2 bg-blue-500 rounded-xl hover:bg-blue-600 transition">Hire Me</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500">
+    © 2026 Your Name. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
