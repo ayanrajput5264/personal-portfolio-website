@@ -1,102 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Rao Ayan Rajput</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      background: linear-gradient(-45deg, #0f172a, #1e293b, #020617, #111827);
-      background-size: 400% 400%;
-      animation: gradientBG 10s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<body class="bg-gray-900 text-white font-sans">
 
-<body class="text-white font-sans">
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center p-6 bg-gray-800">
+  <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">Ayan.dev</h1>
+  <ul class="flex space-x-6">
+    <li><a href="#about" class="hover:text-blue-400">About</a></li>
+    <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Navbar -->
-  <nav class="flex justify-between items-center px-8 py-4 bg-black/30 backdrop-blur-lg">
-    <img src="./img/my photo.jfif" class="w-10 h-10 rounded-full border-2 border-blue-500">
-    <ul class="flex gap-6">
-      <li><a href="#" class="hover:text-blue-400">Home</a></li>
-      <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
-    </ul>
-  </nav>
+<!-- HERO -->
+<section class="text-center py-20">
+  <img src="./img/my photo.jfif" alt="Profile" class="w-36 h-36 rounded-full mx-auto border-4 border-gradient-to-r from-blue-500 to-purple-500 mb-6">
+  <h2 class="text-4xl font-bold mb-2">Rao Ayan Rajput</h2>
+  <p class="text-gray-400 mb-4">Frontend Developer | Crypto Researcher | Trader</p>
+  <button class="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-105 transition transform">Hire Me</button>
+</section>
 
-  <!-- Hero Section -->
-  <section class="text-center py-20">
-    <img src="./img/my photo.jfif" class="w-32 h-32 mx-auto rounded-full border-4 border-blue-500">
-    <h1 class="text-4xl font-bold mt-4">Rao Ayan Rajput</h1>
-    <p class="text-gray-400 mt-2">Web Developer | Blockchain | Crypto</p>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="py-20 text-center px-4">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+  <p class="max-w-2xl mx-auto text-gray-300">
+    I am a passionate frontend developer with a strong fundemental in Html Css and tailwind  I build modern, fast, and responsive websites with clean design.
+  </p>
+</section>
 
-  <!-- Projects -->
-  <section id="projects" class="px-8 py-16">
-    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-4 text-center">
+  <h2 class="text-3xl font-bold mb-10">Projects</h2>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Project Card -->
-      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">Project Title</h3>
-        <p class="text-gray-400 mt-2">Project description here...</p>
-      </div>
-
-      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">Project Title</h3>
-        <p class="text-gray-400 mt-2">Project description here...</p>
-      </div>
-
-      <div class="bg-white/10 p-6 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">Project Title</h3>
-        <p class="text-gray-400 mt-2">Project description here...</p>
-      </div>
+  <div class="flex flex-wrap justify-center gap-8">
+    <!-- Project Card -->
+    <div class="bg-gray-800 rounded-xl p-6 w-72 hover:scale-105 transition transform shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+      <p class="text-gray-400">Add your project description here.</p>
     </div>
-  </section>
+    <div class="bg-gray-800 rounded-xl p-6 w-72 hover:scale-105 transition transform shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+      <p class="text-gray-400">Add your project description here.</p>
+    </div>
+    <div class="bg-gray-800 rounded-xl p-6 w-72 hover:scale-105 transition transform shadow-lg">
+      <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+      <p class="text-gray-400">Add your project description here.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="px-8 py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+<!-- CONTACT -->
+<section id="contact" class="py-20 text-center px-4">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  
+  <!-- Contact Items -->
+  <div class="flex flex-col items-center space-y-4">
 
-    <p>
-      Email: ayanait87@email.com
+    <!-- Email -->
+    <a href="mailto:ayanait87@gmail.com" class="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0l-4-4m4 4l-4 4M4 6h16M4 18h16"/>
+      </svg>
+      <span>Email: ayanait87@gmail.com</span>
+    </a>
 
-    </p>
+    <!-- Phone -->
+    <a href="tel:03122066503" class="flex items-center space-x-2 text-gray-300 hover:text-green-400 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59a2 2 0 01-.36 2.41l-1.45 1.45a2 2 0 002.41.36L19 7v2"/>
+      </svg>
+      <span>Phone: 03122066503</span>
+    </a>
 
-    <p>
-      GitHub: ayanrajput5264
+    <!-- GitHub -->
+    <a href="https://github.com/ayanrajput5264" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-white transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-100" viewBox="0 0 24 24" fill="currentColor">
+        <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.373 0 12a12 12 0 008.21 11.43c.6.11.82-.26.82-.58v-2.18c-3.34.72-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.25 1.85 1.25 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17.7 2.7 18.7 3.02 18.7 3.02c.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.91.43.37.81 1.1.81 2.22v3.3c0 .32.21.7.82.58A12 12 0 0024 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
+      </svg>
+      <span>GitHub</span>
+    </a>
 
-    </p>
-
-    <p>
-      LinkedIn: rao-ayan-rajput
-
-    </p>
-    <button class="mt-6 px-6 py-2 bg-blue-500 rounded-xl hover:bg-blue-600 transition">Hire Me</button>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 text-gray-500">
-    © 2026 Your Name. All rights reserved.
-  </footer>
-
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rao-ayan-rajput" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-blue-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.271c-.966 0-1.75-.79-1.75-1.764 0-.974.784-1.765 1.75-1.765s1.75.791 1.75 1.765c0 .974-.784 1.764-1.75 1.764zm13.5 10.271h-3v-4.5c0-1.071-.022-2.448-1.492-2.448-1.492 0-1.72 1.165-1.72 2.37v4.578h-3v-9h2.881v1.233h.041c.401-.761 1.381-1.562 2.841-1.562 3.036 0 3.6 2.001
 </body>
-
 </html>
